@@ -1,0 +1,6 @@
+<h1>Crea un libro</h1>
+
+<%= form_for @book do |f|%>
+  <%= f.text_field :title, placeholder: "Crea un libro" %>
+  <%= f.submit%>
+<%end%>

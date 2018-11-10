@@ -1,0 +1,11 @@
+<h1>Acá esta mi Autor y mi libro</h1>
+
+<ul>
+  <%@author.books.each do |book|%>
+    <li> <%= book.title%> </li>
+  <%end%>
+</ul>
+
+<%= form_tag @author, method: "delete" do%>
+  <%= submit_tag "Eliminar autor"%>
+<%end%>
